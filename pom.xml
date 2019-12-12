@@ -18,6 +18,8 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<docker.image.prefix>demo</docker.image.prefix>
+		<project.build.directory>demo</project.build.directory>
+		<project.build.finalName>demo</project.build.finalName>
 	</properties>
 
 	<dependencies>
@@ -102,8 +104,8 @@
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
-							<!--<directory>${project.build.directory}</directory>
-							<include>${project.build.finalName}.jar</include>-->
+							<directory>${project.build.directory}</directory>
+							<include>${project.build.finalName}.jar</include>
 						</resource>
 					</resources>
 				</configuration>
